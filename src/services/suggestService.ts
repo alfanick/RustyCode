@@ -270,7 +270,10 @@ export default class SuggestService {
                 }
 
                 let docLine = docs[i];
-
+                
+                if (docLine.trim().startsWith('#')) {
+                    continue;
+                } else
                 if (docLine.trim().startsWith('```')) {
                     if (currentBlock.length) {
                         pushBlock();
