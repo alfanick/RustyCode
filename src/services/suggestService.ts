@@ -270,7 +270,7 @@ export default class SuggestService {
                 }
 
                 let docLine = docs[i];
-                
+
                 if (docLine.trim().startsWith('#')) {
                     continue;
                 } else
